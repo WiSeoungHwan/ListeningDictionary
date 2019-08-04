@@ -15,6 +15,8 @@
 		3CB02D2C22F5B4FA00A92930 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D2B22F5B4FA00A92930 /* MainTabBarController.swift */; };
 		3CB02D2E22F5B54B00A92930 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D2D22F5B54B00A92930 /* SearchViewController.swift */; };
 		3CB02D3022F5CFD400A92930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */; };
+		3CB02D3522F69E7B00A92930 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D3422F69E7B00A92930 /* Caption.swift */; };
+		3CB02D3722F6BD6000A92930 /* caption.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CB02D3622F6BD6000A92930 /* caption.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3CB02D2B22F5B4FA00A92930 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3CB02D2D22F5B54B00A92930 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3CB02D3422F69E7B00A92930 /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
+		3CB02D3622F6BD6000A92930 /* caption.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = caption.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		3CB02D1222F56D5300A92930 /* ListeningDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				3CB02D3322F69E6100A92930 /* Model */,
 				3CB02D2A22F5B3A500A92930 /* Controller */,
 				3CB02D2922F5B38A00A92930 /* NetworkModel */,
 				3CB02D1322F56D5300A92930 /* AppDelegate.swift */,
@@ -87,6 +92,15 @@
 				3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CB02D3322F69E6100A92930 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CB02D3622F6BD6000A92930 /* caption.xml */,
+				3CB02D3422F69E7B00A92930 /* Caption.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB02D3722F6BD6000A92930 /* caption.xml in Resources */,
 				3CB02D1E22F56D5400A92930 /* LaunchScreen.storyboard in Resources */,
 				3CB02D1B22F56D5400A92930 /* Assets.xcassets in Resources */,
 			);
@@ -163,6 +178,7 @@
 				3CB02D1422F56D5300A92930 /* AppDelegate.swift in Sources */,
 				3CB02D2822F5B1FE00A92930 /* YoutubeAPI.swift in Sources */,
 				3CB02D3022F5CFD400A92930 /* DetailViewController.swift in Sources */,
+				3CB02D3522F69E7B00A92930 /* Caption.swift in Sources */,
 				3CB02D2C22F5B4FA00A92930 /* MainTabBarController.swift in Sources */,
 				3CB02D2622F5A61100A92930 /* Codable.swift in Sources */,
 			);

@@ -12,7 +12,7 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewControllers = [UINavigationController(rootViewController: SearchViewController()),DetailViewController()]
+        viewControllers = [UINavigationController(rootViewController: SearchViewController())]
     }
 
 }
