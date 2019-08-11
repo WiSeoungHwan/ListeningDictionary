@@ -17,6 +17,7 @@
 		3CB02D3022F5CFD400A92930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */; };
 		3CB02D3522F69E7B00A92930 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D3422F69E7B00A92930 /* Caption.swift */; };
 		3CB02D3722F6BD6000A92930 /* caption.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CB02D3622F6BD6000A92930 /* caption.xml */; };
+		3CB02D392300109500A92930 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB02D382300109500A92930 /* DetailPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3CB02D3422F69E7B00A92930 /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		3CB02D3622F6BD6000A92930 /* caption.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = caption.xml; sourceTree = "<group>"; };
+		3CB02D382300109500A92930 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				3CB02D2B22F5B4FA00A92930 /* MainTabBarController.swift */,
 				3CB02D2D22F5B54B00A92930 /* SearchViewController.swift */,
 				3CB02D2F22F5CFD400A92930 /* DetailViewController.swift */,
+				3CB02D382300109500A92930 /* DetailPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB02D392300109500A92930 /* DetailPageViewController.swift in Sources */,
 				3CB02D2E22F5B54B00A92930 /* SearchViewController.swift in Sources */,
 				3CB02D1422F56D5300A92930 /* AppDelegate.swift in Sources */,
 				3CB02D2822F5B1FE00A92930 /* YoutubeAPI.swift in Sources */,

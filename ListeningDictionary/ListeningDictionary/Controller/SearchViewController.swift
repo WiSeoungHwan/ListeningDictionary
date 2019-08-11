@@ -5,7 +5,6 @@
 //  Created by Wi on 03/08/2019.
 //  Copyright © 2019 Wi. All rights reserved.
 //
-
 import UIKit
 
 class SearchViewController: UITableViewController {
@@ -22,6 +21,7 @@ class SearchViewController: UITableViewController {
     var rowStart = false
     var cellStart = false
     var cellCount = 0
+    var rowCount = 0
     
     // MARK: - LifeCycle
     
@@ -52,6 +52,7 @@ class SearchViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewController()
         detailVC.caption = searchResults[indexPath.row]
+        detailVC.searchWord = self.searchWord
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
@@ -112,6 +113,14 @@ extension SearchViewController: XMLParserDelegate{
 //            print(currentCaption)
             if currentCaption.caption.contains(searchWord){
                 searchResults.append(currentCaption)
+                rowCount += 1
+            }
+            if rowCount == 5 {
+                parser.abortParsing()
+                
+                let pageVC = DetailPageViewController()
+                pageVC.searchResults = searchResults
+                present(pageVC, animated: true, completion: nil)
             }
             rowStart = false
         }
@@ -124,7 +133,10 @@ extension SearchViewController: XMLParserDelegate{
     }
     func parserDidEndDocument(_ parser: XMLParser) {
         print(searchResults)
-        tableView.reloadData()
+        
+    }
+    func parser(_ parser: XMLParser, parseErrorOccurred parseError: Error) {
+        print("row count is over")
     }
 }
 
@@ -148,7 +160,6 @@ extension SearchViewController: UISearchBarDelegate{
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchWord = searchBar.text!
-        print(searchResults.count)
         xmlParse()
     }
 }
